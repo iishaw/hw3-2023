@@ -1,0 +1,124 @@
+body{
+   /* Set line spacing */
+   line-height: 1.5;
+   padding: 8px 10px;
+}
+
+header, nav{
+    /* Set padding and margin */
+    padding: 12px 10px 8px 20px;
+    margin: 10px 15px;
+}
+
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    margin: 10px 30px;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #FDDFBB;
+}
+
+nav a{
+    /* Set text decoration*/
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: #000000;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 6px;
+    text-transform: uppercase;
+}
+
+h1{
+   /*Set font and font size*/
+   font-family: "Merriweather", "Anton", "Times New Roman", Georgia; /* Merriweather and Anton were not valid CSS identifiers */
+   font-size: 40px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-size: 30px;
+    font-family: "Anton", "Times New Roman", Arial;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 25px;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 10px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    width: 90%;
+    justify-content: space-between; /* To cover the background colour on the sides and make the containers fill the entire grid */
+    margin: auto;   /* to center the grid */
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 30px;
+    row-gap: 10px;
+    background-color: #6f839e;
+    border-radius: 20px;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    width: 90%;
+    margin: 0 auto;   /* to center the images. only using auto didn't work */
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 8px 0px 5px #adadad;
+}
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */
+    box-shadow: -8px 0px 5px #adadad;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 8px 0px 5px #adadad, -8px 0px 5px #adadad;
+}
+
+p + p {
+     /* Set indentation */
+     text-indent: 20px;
+}
+
+p{
+     /* Set margin */
+     margin-top: 15px ;
+}
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    list-style-image: url('../images/sketchbook.png');
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
